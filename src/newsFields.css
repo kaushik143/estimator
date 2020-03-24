@@ -1,0 +1,18 @@
+.newsContainer {
+  display: flex;
+}
+.NewsSection {
+  flex: 3;
+  margin: 20px;
+}
+.VideosSection {
+  flex: 2;
+  margin: 20px;
+}
+
+.Label {
+  border-bottom: solid 1px #e8e8e8;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 12px 0;
+}

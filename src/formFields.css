@@ -1,0 +1,107 @@
+.formFieldsContainer {
+  display: flex;
+  flex-direction: column;
+  background-image: #fedc31;
+  padding: 60px 20px;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.finalCalculation {
+  display: flex;
+  flex-direction: column;
+  background-image: #fedc31;
+  padding: 60px 20px;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  color: #1e3746;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+input {
+  margin: 16px 0;
+}
+button {
+  background-color: #f37322 !important;
+  color: #fff;
+  pointer-events: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  min-width: 100%;
+  height: 40px;
+  /* height: 100%; */
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-color: transparent;
+}
+.actionContainer {
+  min-width: 150px;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #00a63f;
+  box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 12px;
+  min-width: 120px;
+  margin: 20px;
+  background-color: white;
+}
+
+.itemSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 60%;
+  color: #1e3746;
+  margin-bottom: 30px;
+  flex-flow: wrap;
+}
+
+.logoUrl {
+  justify-content: center;
+  display: flex;
+}
+
+.logoUrl img {
+  width: 80px;
+  height: 80px;
+}
+.itemName {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.totalPrice {
+  font-size: 20px;
+  font-weight: 500;
+}
+.totalQuantity {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px;
+}
+.totalFinalPrice {
+  font-size: 32px;
+  font-weight: 700;
+}

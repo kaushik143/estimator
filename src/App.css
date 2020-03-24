@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -14,16 +15,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: #1e3746;
+  background-color: #fedc31;
+  height: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 40px;
+  font-weight: 700;
 }
-
+.sectionContainer {
+  height: calc(100vh - 60px);
+  background-color: #fedc31;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +40,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+input {
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  outline: none;
+  height: 36px;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.mainContainer {
+  object-fit: cover;
+  height: 380px;
+  min-height: 380px;
+  display: flex;
+}
+.mainContainer div {
+  flex: 1;
+}
+.mainContainer img {
+  height: 100%;
+}
+.instruction {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  justify-content: flex-start;
+}
+
+.footerContainer {
+  background-image: linear-gradient(-135deg, #2f94da, #2485c8);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  padding: 24px;
+  text-align: left;
+}
+.footerContainer .aboutUs {
+  flex: 3;
+}
+.footerContainer .linksSection {
+  flex: 2;
+}
+.label {
+  font-weight: 700;
 }

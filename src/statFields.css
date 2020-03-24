@@ -1,0 +1,7 @@
+.statsContainer {
+  display: flex;
+}
+.statsItem {
+  flex: 1;
+  padding: 12px;
+}
