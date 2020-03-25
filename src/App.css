@@ -1,6 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+#root {
+  min-height: 100%;
+  background-color: #fedc31;
+}
 .App {
   text-align: center;
-  height: 100vh;
+  min-height: 100%;
 }
 
 .App-logo {
@@ -17,17 +25,18 @@
 .App-header {
   color: #1e3746;
   background-color: #fedc31;
-  height: 60px;
+  padding: 0 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 40px;
   font-weight: 700;
+  padding: 8px 16px;
 }
 .sectionContainer {
-  height: calc(100vh - 60px);
   background-color: #fedc31;
+  padding: 0 15px;
 }
 .App-link {
   color: #61dafb;

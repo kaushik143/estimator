@@ -160,11 +160,11 @@ class FormFields extends Component {
               })}
             </div>
             <div className="totalFinalPrice">
-              Total Price Rs. {this.state.price}
+              Total Price <div>Rs. {this.state.price}</div>
             </div>
             <div className="actionContainer" onClick={this.resetInformation}>
               <button type="button" className="small">
-                Reset
+                RESET
               </button>
             </div>
           </div>

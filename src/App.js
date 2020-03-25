@@ -8,7 +8,7 @@ import { NewsFields } from "./newsFields";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Covid-19 Estimator</header>
+      <header className="App-header">Covid-19 Raashan</header>
       {/* <div className="mainContainer">
         <div className="instruction">
           <div>Wash your hands frequently</div>
