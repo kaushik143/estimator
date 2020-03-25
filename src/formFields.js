@@ -91,10 +91,12 @@ class FormFields extends Component {
     const diffDays = Math.round(
       Math.abs((firstDate - this.lastDate) / this.oneDay)
     );
-    axios
-      .get(
-        `http://13.127.254.103:8642/api/v1/get_estimated_data/?no_of_person=${this.state.members}&lockdown_period=${diffDays}`
-      )
+    const config = {
+      method: "get",
+      mode: "no-cors",
+      url: `http://13.127.254.103:8642/api/v1/get_estimated_data/?no_of_person=${this.state.members}&lockdown_period=${diffDays}`
+    };
+    axios(config)
       .then(response => response.data)
       .then(response => {
         this.setState({
