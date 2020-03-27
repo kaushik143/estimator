@@ -7,9 +7,9 @@ import "react-datepicker/dist/react-datepicker.css";
 import { times } from "lodash";
 import * as axios from "axios";
 
-const ques1 = "How many members you have in your family";
+const ques1 = "How many members you have in your family?";
 const ques2 = "Please add age for all the members";
-const ques3 = "How many lockdown period";
+const ques3 = "How many days of lockdown?";
 
 class FormFields extends Component {
   constructor() {
@@ -20,7 +20,7 @@ class FormFields extends Component {
       members: "",
       age: [],
       startDate: new Date(),
-      period: 21,
+      period: "",
       items: []
     };
   }
@@ -88,9 +88,10 @@ class FormFields extends Component {
 
   getUserList = () => {
     const firstDate = this.state.startDate;
-    const diffDays = Math.round(
-      Math.abs((firstDate - this.lastDate) / this.oneDay)
-    );
+    // const diffDays = Math.round(
+    //   Math.abs((firstDate - this.lastDate) / this.oneDay)
+    // );
+    const diffDays = this.state.period;
     const config = {
       method: "get",
       mode: "no-cors",
@@ -123,7 +124,7 @@ class FormFields extends Component {
               />
             </div>
             {/* <div>{this.addMembersAge()}</div> */}
-            {/* <div className="formFields">
+            <div className="formFields">
               {ques3}
               <input
                 type="number"
@@ -131,8 +132,7 @@ class FormFields extends Component {
                 value={this.state.period}
                 onChange={this.handleLockDownPeriod}
               />
-              
-            </div> */}
+            </div>
             <div className="actionContainer" onClick={this.submitInformation}>
               <button type="button" className="small">
                 CALCULATE
