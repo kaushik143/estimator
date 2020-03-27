@@ -8,7 +8,7 @@ import { NewsFields } from "./newsFields";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Covid-19 Raashan</header>
+      <header className="App-header">Raashan Estimator</header>
       {/* <div className="mainContainer">
         <div className="instruction">
           <div>Wash your hands frequently</div>
@@ -25,27 +25,21 @@ function App() {
       {/* <NewsFields /> */}
       <div className="sectionContainer">
         <FormFields />
-        {/* <div className="footerContainer">
-          <div className="aboutUs">
-            <div className="label">About us</div>
-            <div className="value">
-              <p>It is not important who we are. </p>
-              <p>
-                At this point, we just want to say we are comman people of India
-                who want to spread awareness and help everyone in the way
-                possible.
-              </p>
-            </div>
+      </div>
+      <div className="footerContainer">
+        <div className="aboutUs">
+          <div className="label">About us</div>
+          <div className="value">
+            <p>
+              In this time of lockdown we have felt people are stocking up
+              everything. But we request everyone to buy only that much which is
+              sufficient for their family members. To get the best estimation we
+              have created this Raashan estimator for the essentials items.
+            </p>
           </div>
-          <div className="linksSection">
-            <div className="label">Important links</div>
-            <div className="value">
-              <ul>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-        </div> */}
+        </div>
+        <div className="footerTag">Made with &#9829;.</div>
+        <div className="footerTag">Help fighting coronavirus</div>
       </div>
     </div>
   );

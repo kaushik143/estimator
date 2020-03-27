@@ -9,6 +9,11 @@ body {
 .App {
   text-align: center;
   min-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .App-logo {
@@ -36,7 +41,6 @@ body {
 }
 .sectionContainer {
   background-color: #fedc31;
-  padding: 0 15px;
 }
 .App-link {
   color: #61dafb;
@@ -83,12 +87,28 @@ input {
 }
 
 .footerContainer {
-  background-image: linear-gradient(-135deg, #2f94da, #2485c8);
-  color: white;
+  background-color: white;
   font-size: 20px;
   display: flex;
-  padding: 24px;
+  flex-direction: column;
   text-align: left;
+
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .footerContainer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .footerContainer {
+    position: absolute;
+    bottom: 0;
+  }
 }
 .footerContainer .aboutUs {
   flex: 3;
@@ -98,4 +118,14 @@ input {
 }
 .label {
   font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.footerTag {
+  font-size: 12px;
 }
