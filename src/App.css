@@ -98,16 +98,14 @@ input {
 }
 
 @media screen and (min-width: 1000px) {
-  .footerContainer {
-    position: absolute;
-    bottom: 0;
+  .sectionContainer {
+    min-height: calc(100% - 220px);
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .footerContainer {
-    position: absolute;
-    bottom: 0;
+  .sectionContainer {
+    min-height: calc(100% - 220px);
   }
 }
 .footerContainer .aboutUs {
